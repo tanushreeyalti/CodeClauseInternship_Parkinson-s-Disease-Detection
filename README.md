@@ -1,69 +1,74 @@
-🧠 Parkinson's Disease Detection using Machine Learning
-📌 Project Overview
+# 🧠 Parkinson's Disease Detection using Machine Learning  
 
-This project focuses on building a Machine Learning model to detect Parkinson's Disease using vocal features. The dataset is taken from Kaggle - Parkinson’s Disease Dataset.
-The aim is to analyze patterns in voice recordings and classify whether a patient has Parkinson’s disease.
+---
 
-📂 Dataset
+## 📌 Project Overview  
+This project focuses on building a **Machine Learning model** to detect **Parkinson's Disease** using vocal features.  
+The dataset is taken from [Kaggle - Parkinson’s Disease Dataset](https://www.kaggle.com/datasets/debasisdotcom/parkinsons-disease-detection).  
+The main goal is to analyze biomedical voice features and classify whether a patient has Parkinson’s disease.  
 
-Source: Kaggle
+---
 
-Features: 22 biomedical voice measurements (e.g., fundamental frequency, jitter, shimmer, NHR, HNR)
+## 📂 Dataset  
+- **Source**: Kaggle  
+- **Rows**: 195 samples  
+- **Columns**: 22 biomedical voice measurements  
+- **Target Variable**:  
+  - `status = 1` → Patient has Parkinson’s  
+  - `status = 0` → Healthy individual  
 
-Target: status (1 = Parkinson’s, 0 = Healthy)
+---
 
-Rows: 195 samples
+## ⚙️ Technologies Used  
+- Python 🐍  
+- Pandas, NumPy → Data Processing  
+- Matplotlib, Seaborn → Data Visualization  
+- Scikit-learn → Machine Learning Models  
 
-⚙️ Technologies Used
+---
 
-Python
+## 📊 Exploratory Data Analysis (EDA)  
+- ✅ Feature distribution plots  
+- ✅ Correlation Heatmap (to check relationships)  
+- ✅ Boxplots (to detect outliers)  
+- ✅ Class distribution visualization  
 
-Pandas, NumPy (Data Processing)
+---
 
-Matplotlib, Seaborn (Visualization)
+## 🤖 Machine Learning Models Implemented  
+- Logistic Regression  
+- Support Vector Machine (SVM)  
+- Random Forest Classifier  
+- K-Nearest Neighbors (KNN)  
 
-Scikit-learn (ML Models)
+**Evaluation Metrics**:  
+- Accuracy Score  
+- Confusion Matrix  
+- Classification Report  
 
-📊 Exploratory Data Analysis (EDA)
+---
 
-Histograms and distribution plots of features
+## 🚀 Results  
+- **Best Model**: Support Vector Machine (SVM) / Random Forest  
+- **Accuracy Achieved**: ~87–90%  
+- **Important Features**:  
+  - `MDVP:Fo(Hz)`  
+  - `MDVP:Jitter(%)`  
+  - `MDVP:Shimmer`  
+  - `HNR`  
 
-Correlation Heatmap to identify important features
+---
 
-Boxplots to detect outliers
+## 📷 Sample Visualizations  
+- 📌 Correlation Heatmap  
+- 📌 Feature Distributions  
+- 📌 Confusion Matrix Heatmap  
 
-Class distribution visualization
+---
 
-🤖 Machine Learning Models
+## 🏗️ How to Run Locally  
 
-Logistic Regression
-
-Support Vector Machine (SVM)
-
-Random Forest Classifier
-
-K-Nearest Neighbors (KNN)
-
-Evaluation Metrics:
-
-Accuracy
-
-Confusion Matrix
-
-Classification Report
-
-🚀 Results
-
-Best performing model: SVM / Random Forest
-
-Achieved ~87–90% accuracy on test data
-
-Key features: MDVP:Fo(Hz), MDVP:Jitter(%), MDVP:Shimmer, HNR
-
-📷 Sample Visualizations
-
-Correlation Heatmap
-
-Feature Distributions
-
-Confusion Matrix Heatmap
+1️⃣ Clone this repository  
+```bash
+git clone https://github.com/your-username/parkinsons-disease-detection.git
+cd parkinsons-disease-detection
